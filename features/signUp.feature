@@ -1,9 +1,23 @@
-Feature: Magento SignUp tests
+Feature: Sign up functionality test
 
     @SignUpUnique
-    Scenario: Valid sign up test using unique credentials
-        Given User has opened product page store
-        When User proceeds for SignUp
-        And User apply new account information
-        And User presses the Create and Account button
-        Then User account is created
+    Scenario: Register a new user
+        Given User has opened the landing page
+        And User presses the Sign In button 
+        When User enters a new email address 
+        And User presses Create account button 
+        And User fills in mandatory user details 
+        And User presses the Register button 
+        Then User is logged in
+        And User is in My account page
+
+    @SignUpAndFail
+    Scenario: Register a new user and failed 
+        Given User has opened the landing page
+        And User presses the Sign In button 
+        When User enters a new email address 
+        And User presses Create account button 
+        And User fills in mandatory user details 
+        And User presses the Register button 
+        Then User is logged in
+        And User is NOT in My account page

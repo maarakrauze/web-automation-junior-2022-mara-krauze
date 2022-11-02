@@ -1,11 +1,11 @@
 export class BasePage {
 
     greetingInfo() {
-        return $('.page-header .greet')
+        return $(".bx-next")
     }
 
     createAccountButton() {
-        return $("//*[contains(@class, 'page-header')]//a[text()='Create an Account']")
+        return $(".login")
     }
 
 }

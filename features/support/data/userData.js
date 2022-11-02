@@ -5,17 +5,25 @@ export default class UserData {
         this.randomUser = new RandomUser(
             faker.name.firstName(),
             faker.name.lastName(),
-            faker.internet.email(),
-            "Qwerty121331@qfwqf"
+            faker.internet.password(),
+            faker.address.streetAddress(),
+            faker.address.city(),
+            faker.address.zipCode("#####"),
+            faker.phone.number("#########"),
+            faker.internet.email()
         )       
     }
 }
 
 class RandomUser {
-    constructor(firstName, lastName, email, password){
+    constructor(firstName, lastName, password, address, city, zipCode, phone, email){
         this.firstName = firstName,
         this.lastName = lastName,
-        this.email = email,
-        this.password = password
+        this.password = password,
+        this.address = address,
+        this.city = city,
+        this.zipCode = zipCode,
+        this.phone = phone,
+        this.email = email
     }
 }

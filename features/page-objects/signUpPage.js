@@ -1,31 +1,39 @@
 export class SignUpPage {
 
     firstNameInput() {
-        return $("#firstname")
+        return $("#customer_firstname")
     }
 
     lastNameInput() {
-        return $("#lastname")
-    }
-
-    emailInput() {
-        return $("#email_address")
+        return $("#customer_lastname")
     }
 
     passwordInput() {
-        return $("#password")
+        return $("#passwd")
     }
 
-    confirmationPasswordInput() {
-        return $("#password-confirmation")
+    adressInput() {
+        return $("#address1")
     }
+
+    cityInput() {
+        return $("#city")
+    }
+
+    stateDropdown() {
+        return $("#id_state")
+    }
+
+    zipInput() {
+        return $("//*[@id='postcode']")
+    }   
+
+    mobilePhoneInput() {
+        return $("#phone_mobile")
+    }   
 
     createAccountButton() {
-        return $(".submit")
-    }
-
-    successMessage() {
-        return $(".message-success")
+        return $("#submitAccount")
     }
 
 }

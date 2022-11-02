@@ -3,7 +3,7 @@ import { pages } from "../support/page";
 export class NavigationTest {
 
     async openProductPage() {
-        await browser.url("https://magento.softwaretestingboard.com/")
+        await browser.url("http://automationpractice.com/index.php")
         await pages.basePage.greetingInfo().waitForDisplayed({timeout : 2000})
     }
 
