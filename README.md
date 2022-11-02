@@ -22,5 +22,5 @@ npm install allure-commandline --save-dev
 allure-results
 allure generate ./allure-results --clean && allure open  
 
-Enjoy!
+Enjoy!!
 
