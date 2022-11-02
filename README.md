@@ -29,5 +29,9 @@ allure-results
 
 allure generate ./allure-results --clean && allure open  
 
+Link to video demonstration:
+
+https://drive.google.com/drive/u/1/folders/1Yh_e7VjlxVvQrMYC8y1sIssDnCu45EHE
+
 Enjoy!!
 
